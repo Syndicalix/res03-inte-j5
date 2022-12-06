@@ -1,17 +1,94 @@
-/* Error: expected "{".
- *     ,
- * 112 | @media (max-width: 767px)
- *     |                          ^
- *     '
- *   assets/styles/sass/style.scss 112:26  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: expected "{".\a     \2577 \a 112 \2502  @media (max-width: 767px)\a     \2502                           ^\a     \2575 \a   assets/styles/sass/style.scss 112:26  root stylesheet';
+@charset "UTF-8";
+html {
+  font-size: 16px;
+  font-family: "JetBrains Mono", monospace;
+  background: linear-gradient(225deg, #7400b8, #6930c3, #5e60ce, #5390d9, #4ea8de, #48bfe3, #56cfe1);
 }
+
+/*
+$neonPurple: #5e60ce;  
+$neonBlue: #64dfdf;  
+$palatinate-purple: #7400b8;  
+$white: #ffffff;
+$skobeloff: #006466;
+
+$gradient-top-left: linear-gradient(225deg, #7400b8, #6930c3, #5e60ce, #5390d9, #4ea8de, #48bfe3, #56cfe1);
+
+*/
+body main {
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+}
+
+body nav ul {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  height: 100%;
+}
+
+body nav ul li a {
+  display: block;
+  text-decoration: none;
+  color: white;
+}
+
+h1 {
+  display: none;
+}
+
+body nav {
+  display: grid;
+  grid-column: 2/3;
+  border-bottom: solid #64dfdf 1px;
+}
+
+.yepify {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  grid-row: 1/4;
+}
+
+.yepilist {
+  grid-column-start: 4;
+  grid-column-end: 4;
+  opacity: 0.6;
+  border: hidden;
+}
+
+li.play {
+  list-style-type: "▶";
+}
+
+li.equalizer {
+  list-style-type: "\f39a";
+}
+
+.yepiprice {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+h4 {
+  color: #7400b8;
+}
+
+h2 {
+  color: white;
+  text-align: center;
+}
+
+h3 {
+  color: #64dfdf;
+  border-bottom: solid #64dfdf;
+}
+
+body section fieldset ul li {
+  border-bottom: solid #006466 2px;
+}
+
+/*# sourceMappingURL=style.css.map */
