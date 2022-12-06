@@ -1,46 +1,17 @@
-html {
-  font-size: 16px;
-  font-family: "JetBrains Mono", monospace;
-  color: white;
-  background: linear-gradient(225deg, #7400b8, #6930c3, #5e60ce, #5390d9, #4ea8de, #48bfe3, #56cfe1);
+/* Error: expected "{".
+ *     ,
+ * 112 | @media (max-width: 767px)
+ *     |                          ^
+ *     '
+ *   assets/styles/sass/style.scss 112:26  root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: 'Error: expected "{".\a     \2577 \a 112 \2502  @media (max-width: 767px)\a     \2502                           ^\a     \2575 \a   assets/styles/sass/style.scss 112:26  root stylesheet';
 }
-
-/*
-$neonPurple: #5e60ce;  
-$neonBlue: #64dfdf;  
-$palatinate-purple: #7400b8;  
-$white: #ffffff;
-$skobeloff: #006466;
-
-$gradient-top-left: linear-gradient(225deg, #7400b8, #6930c3, #5e60ce, #5390d9, #4ea8de, #48bfe3, #56cfe1);
-
-*/
-body main {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-}
-
-body nav ul {
-  list-style-type: none;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  height: 100%;
-}
-
-body nav ul li {
-  text-decoration: none;
-}
-
-h3 {
-  background-color: #7400b8;
-}
-
-h1 {
-  display: none;
-}
-
-body nav {
-  grid-column: 2/3;
-}
-
-/*# sourceMappingURL=style.css.map */
