@@ -2,6 +2,7 @@ html {
   font-size: 16px;
   font-family: 'JetBrains Mono', monospace;
   color:white;
+  background: linear-gradient(225deg, #7400b8, #6930c3, #5e60ce, #5390d9, #4ea8de, #48bfe3, #56cfe1);
 }
 
 /*
@@ -16,54 +17,43 @@ $gradient-top-left: linear-gradient(225deg, #7400b8, #6930c3, #5e60ce, #5390d9, 
 */
 
 body {
-    background: linear-gradient(225deg, #7400b8, #6930c3, #5e60ce, #5390d9, #4ea8de, #48bfe3, #56cfe1);
-    height:100vh;
-    width:100vw;
-    margin:0;
+    main {
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    }
+}
+
+body {
+    nav {
+        ul {
+            list-style-type: none;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            height: 100%;
+        }
+    }
+}
+
+body {
+    nav {
+        ul {
+            li {
+                text-decoration:none;
+            }
+        }
+    }
+}
+
+h3 {
+    background-color: #7400b8 ;
 }
 
 h1 {
     display:none;
 }
 
-ul {
-    display: inline-block;
-    list-style-type:none;
-    margin:1em;
-    padding:1em;
-}
-
-li {
-    text-align: center;
-    margin-left:5em;
-    float:left;
-}
-
-.yepilist {
-    background-color: rgba(0, 0, 0, 0.3);
-    border:1px;
-    opacity:0.3;
-    height:70vh;
-    width:30vw;
-    border-radius:5px;
-}
-
-
-h3 {
-    color:#5e60ce;
-}
-
-h4 {
-    color:#64dfdf;
-}
-
-img {
-    width:20%;
-    height:20%;
-    
-}
-
-main > section {
-    display:grid;
-    grid-template-columns: 1fr 1fr;
+body {
+    nav {
+        grid-column: 2 / 3;
+    }
 }
